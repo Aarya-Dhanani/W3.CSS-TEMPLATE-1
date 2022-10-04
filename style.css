@@ -1,0 +1,1405 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 100%;
+}
+
+.nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.logo-nav {
+    float: left;
+    background-color: teal;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 107px;
+    height: 40px;
+    font-size: 17px;
+}
+
+.logo-nav:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+.team-nav {
+    float: left;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    margin-left: -8px;
+}
+
+.team-nav:hover {
+    background-color: white;
+    color: black;
+}
+
+.work-nav {
+    float: left;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+}
+
+.work-nav:hover {
+    background-color: white;
+    color: black;
+}
+
+.price-nav {
+    float: left;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+}
+
+.price-nav:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact-nav {
+    float: left;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+}
+
+.contact-nav:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdown-nav {
+    float: left;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 112px;
+    height: 40px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.dropdown-nav:hover {
+    background-color: lightgrey;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: 4s;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: lightgrey;
+    transition: 0.7s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 90%;
+    transition: 1s;
+    top: 40px;
+}
+
+.dropdown:hover .dropdown-nav {
+    background-color: grey;
+    color: black;
+}
+
+.search-nav {
+    float: right;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.search-nav:hover {
+    background-color: teal;
+}
+
+.section {
+    width: 100%;
+    height: 500px;
+}
+
+.backgroundimage {
+    background-image: url("sailboat.jpg");
+    position: relative;
+    background-attachment: fixed;
+    min-width: 100%;
+    height: 500px;
+    background-size: contain;
+}
+
+.sectionbutton {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left: 40px;
+    top: 440px;
+    font-size: 22px;
+}
+
+.sectionbutton:hover {
+    background-color: teal;
+}
+
+.team {
+    display: flex;
+    overflow: none;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 230px;
+    background-attachment: fixed;
+    min-width: 100%;
+    background-size: contain;
+}
+
+.johnnywalker {
+    color: black;
+    display: block;
+    font-size: 13px;
+    width: 350px;
+    height: 75px;
+    text-align: center;
+}
+
+.johnnywalker img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.johnnywalker img:hover {
+    opacity: 40%;
+    transition: 0.5s;
+}
+
+.rebeccaflex {
+    color: black;
+    display: block;
+    font-size: 13px;
+    width: 350px;
+    height: 75px;
+    text-align: center;
+}
+
+.rebeccaflex img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.rebeccaflex img:hover {
+    opacity: 40%;
+    transition: 0.5s;
+}
+
+.janringo {
+    color: black;
+    display: block;
+    font-size: 13px;
+    width: 350px;
+    height: 75px;
+    text-align: center;
+}
+
+.janringo img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.janringo img:hover {
+    opacity: 40%;
+    transition: 0.5s;
+}
+
+.kairingo {
+    color: black;
+    display: block;
+    font-size: 13px;
+    width: 350px;
+    height: 75px;
+    text-align: center;
+}
+
+.kairingo img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.kairingo img:hover {
+    opacity: 40%;
+    transition: 0.5s;
+}
+
+#teamh3 {
+    font-size: 22px;
+}
+
+.customer {
+    min-width: 100%;
+    height: 550px;
+    background-color: #333333;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background-size: contain;
+    padding-top: 30px;
+}
+
+.text {
+    color: white;
+    width: 230px;
+    height: 600px;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.customer1 img {
+    width: 251px;
+    height: 167px;
+}
+
+.customer1 {
+    background-color: white;
+    color: black;
+    width: 251px;
+    height: 419px;
+    text-align: center;
+}
+
+.customer2 img {
+    width: 251px;
+    height: 167px;
+}
+
+.customer2 {
+    background-color: white;
+    color: black;
+    width: 251px;
+    height: 419px;
+    text-align: center;
+}
+
+.customer3 img {
+    width: 251px;
+    height: 167px;
+}
+
+.customer3 {
+    background-color: white;
+    color: black;
+    width: 251px;
+    height: 419px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.addbutton {
+    width: 100%;
+    height: 0.3px;
+    position: relative;
+}
+
+.add {
+    float: right;
+    color: white;
+    background-color: teal;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    right: 24px;
+    top: -28px;
+    position: absolute;
+}
+
+.add:hover {
+    background-color: lightgrey;
+}
+
+li {
+    list-style: none;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    overflow: none;
+    justify-content: space-between;
+    background-attachment: fixed;
+    min-width: 100%;
+    background-size: contain;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+#same {
+    width: 370px;
+    height: 55px;
+    border: 2px solid lightgrey;
+}
+
+.basic {
+    width: 370px;
+    margin-left: 30px;
+}
+
+#basiccontainer {
+    width: 370px;
+    height: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    border: 2px solid lightgrey;
+}
+
+#buttoncontainer {
+    width: 370px;
+    height: 100px;
+    border: 2px solid lightgrey;
+}
+
+.basicbutton {
+    width: 120px;
+    height: 50px;
+    background-color: teal;
+    color: white;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.basicbutton:hover {
+    background-color: lightgrey;
+}
+
+#pricecontainer {
+    width: 370px;
+    border: 2px solid lightgrey;
+}
+
+#same_2 {
+    width: 370px;
+    height: 55px;
+    border: 2px solid lightgrey;
+}
+
+.pro {
+    width: 370px;
+}
+
+#procontainer {
+    width: 370px;
+    height: 100px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    padding-top: 20px;
+    border: 2px solid lightgrey;
+}
+
+#buttoncontainer_2 {
+    width: 370px;
+    height: 100px;
+    border: 2px solid lightgrey;
+}
+
+.probutton {
+    width: 120px;
+    height: 50px;
+    background-color: teal;
+    color: white;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.probutton:hover {
+    background-color: lightgrey;
+}
+
+#pricecontainer_2 {
+    width: 370px;
+    border: 2px solid lightgrey;
+}
+
+#same_3 {
+    width: 370px;
+    height: 55px;
+    border: 2px solid lightgrey;
+}
+
+.premium {
+    width: 370px;
+    margin-right: 60px;
+}
+
+#premiumcontainer {
+    width: 370px;
+    height: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    border: 2px solid lightgrey;
+    margin-right: 100px;
+}
+
+#buttoncontainer_3 {
+    width: 370px;
+    height: 100px;
+    border: 2px solid lightgrey;
+}
+
+.premiumbutton {
+    width: 120px;
+    height: 50px;
+    background-color: teal;
+    color: white;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.premiumbutton:hover {
+    background-color: lightgrey;
+}
+
+#pricecontainer_3 {
+    width: 370px;
+    border: 2px solid lightgrey;
+}
+
+.basic:hover {
+    box-shadow: 10px 13px 12px grey;
+}
+
+.pro:hover {
+    box-shadow: 10px 13px 12px grey;
+}
+
+.premium:hover {
+    box-shadow: 10px 13px 12px grey;
+}
+
+#contactustext {
+    margin-top: 75px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: teal;
+    text-decoration-thickness: 12px;
+}
+
+.contactus {
+    margin-left: 0px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgrey;
+    background-attachment: fixed;
+    min-width: 100%;
+    height: 600px;
+    background-size: contain;
+    position: relative;
+}
+
+.contactform {
+    margin-top: 50px;
+    padding-top: 25px;
+    padding: 30px;
+    width: 760px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 2px 2px 2px lightgrey;
+}
+
+#name {
+    width: 678px;
+    height: 30px;
+    font-size: 20px;
+    border-bottom: 3px solid lightgrey;
+    border-top: white;
+    border-right: white;
+    border-left: white;
+}
+
+#email {
+    width: 678px;
+    border-bottom: 3px solid lightgrey;
+    border-top: white;
+    border-right: white;
+    border-left: white;
+    height: 30px;
+    font-size: 20px;
+}
+
+#message {
+    width: 678px;
+    border-bottom: 3px solid lightgrey;
+    border-top: white;
+    border-right: white;
+    border-left: white;
+    height: 30px;
+    font-size: 20px;
+}
+
+.formbutton {
+    width: 80px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    transform: translate(570px, -40px);
+}
+
+#like {
+    width: 25px;
+    height: 25px;
+}
+
+.formbutton:hover {
+    background-color: grey;
+}
+
+.location {
+    background-image: url("location.jpg");
+    position: relative;
+    background-attachment: fixed;
+    min-width: 100%;
+    background-size: contain;
+}
+
+.location img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100%;
+    height: 261px;
+    background-color: black;
+    background-attachment: fixed;
+    position: relative;
+    background-size: contain;
+    float: center;
+    margin-top: -5px;
+}
+
+.footerbox {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    left: 38%;
+    position: absolute;
+    top: 19%;
+    align-items: center;
+}
+
+.iconflex {
+    display: inline;
+    flex-direction: row;
+    width: 100%;
+}
+
+.iconfooter {
+    width: 43px;
+    height: 43px;
+    background-color: teal;
+}
+
+.followus {
+    color: white;
+}
+
+.footertext {
+    color: white;
+}
+
+.backtotop {
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    position: aboslute;
+    width: 25px;
+    height: 25px;
+    float: right;
+    transform: translate(200px, 0);
+}
+
+.backtotop:hover {
+    background-color: lightgrey;
+}
+
+.iconfooter:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+
+/*Media Qeury section for responsive design*/
+
+@media screen and (max-width:880px) {
+    .customer {
+        flex-direction: column;
+        height: 1700px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .customer {
+        flex-direction: column;
+        height: 1700px;
+        width: 150%;
+    }
+}
+
+@media screen and (max-width:368px) {
+    .customer {
+        flex-direction: column;
+        height: 1700px;
+        width: 200%;
+    }
+}
+
+@media screen and (max-width:199px) {
+    .customer {
+        flex-direction: column;
+        height: 1700px;
+        width: 500%;
+    }
+}
+
+@media screen and (max-width:591px) {
+    .customer {
+        flex-direction: column;
+        height: 1700px;
+        width: 125%;
+    }
+}
+
+@media screen and (max-width:409px) {
+    .customer {
+        flex-direction: column;
+        height: 1700px;
+        width: 150%;
+    }
+}
+
+@media screen and (max-width:333px) {
+    .customer {
+        flex-direction: column;
+        height: 1700px;
+        width: 180%;
+    }
+}
+
+@media screen and (max-width:252px) {
+    .customer {
+        flex-direction: column;
+        height: 1700px;
+        width: 230%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .pricing {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:873px) {
+    .contact {
+        flex-direction: column;
+        height: 1000px;
+        width: 150%;
+    }
+}
+
+@media screen and (max-width:486px) {
+    .contact {
+        flex-direction: column;
+        height: 1000px;
+        width: 175%;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .contact {
+        flex-direction: column;
+        height: 1000px;
+        width: 200%;
+    }
+}
+
+@media screen and (max-width:301px) {
+    .contact {
+        flex-direction: column;
+        height: 1000px;
+        width: 250%;
+    }
+}
+
+@media screen and (max-width:282px) {
+    .contact {
+        flex-direction: column;
+        height: 1000px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:891px) {
+    .footer {
+        min-width: 250%;
+    }
+}
+
+@media screen and (max-width:378px) {
+    .footer {
+        min-width: 290%;
+    }
+}
+
+@media screen and (max-width:307px) {
+    .footer {
+        min-width: 350%;
+    }
+}
+
+@media screen and (max-width:1104px) {
+    .backgroundimage {
+        width: 140%;
+    }
+    .team {
+        width: 140%;
+    }
+    .customer {
+        width: 140%;
+    }
+    .pricing {
+        width: 140%;
+    }
+    .contact {
+        width: 140%;
+    }
+    .location img {
+        width: 140%;
+    }
+    .footer {
+        width: 140%;
+    }
+}
+
+@media screen and (max-width:889px) {
+    .backgroundimage {
+        width: 250%;
+    }
+    .team {
+        width: 250%;
+    }
+    .customer {
+        width: 250%;
+    }
+    .pricing {
+        width: 250%;
+    }
+    .contact {
+        width: 250%;
+    }
+    .location img {
+        width: 250%;
+    }
+    .footer {
+        width: 250%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:864px) {
+    .backgroundimage {
+        width: 233%;
+    }
+    .team {
+        width: 233%;
+    }
+    .customer {
+        width: 233%;
+    }
+    .pricing {
+        width: 233%;
+    }
+    .contact {
+        width: 233%;
+    }
+    .location img {
+        width: 233%;
+    }
+    .footer {
+        width: 233%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:486px) {
+    .backgroundimage {
+        width: 300%;
+    }
+    .team {
+        width: 300%;
+    }
+    .customer {
+        width: 300%;
+    }
+    .pricing {
+        width: 300%;
+    }
+    .contact {
+        width: 300%;
+    }
+    .location img {
+        width: 300%;
+    }
+    .footer {
+        width: 300%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:265px) {
+    .backgroundimage {
+        width: 400%;
+    }
+    .team {
+        width: 400%;
+    }
+    .customer {
+        width: 400%;
+    }
+    .pricing {
+        width: 400%;
+    }
+    .contact {
+        width: 400%;
+    }
+    .location img {
+        width: 400%;
+    }
+    .footer {
+        width: 400%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1241px) {
+    .backgroundimage {
+        width: 116%;
+    }
+    .team {
+        width: 116%;
+    }
+    .customer {
+        width: 116%;
+    }
+    .pricing {
+        width: 116%;
+    }
+    .contact {
+        width: 116%;
+    }
+    .location img {
+        width: 116%;
+    }
+    .footer {
+        width: 116%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:1321px) {
+    .backgroundimage {
+        width: 110%;
+    }
+    .team {
+        width: 110%;
+    }
+    .customer {
+        width: 110%;
+    }
+    .pricing {
+        width: 110%;
+    }
+    .contact {
+        width: 110%;
+    }
+    .location img {
+        width: 110%;
+    }
+    .footer {
+        width: 110%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:892px) {
+    .backgroundimage {
+        width: 131%;
+    }
+    .team {
+        width: 131%;
+    }
+    .customer {
+        width: 131%;
+    }
+    .pricing {
+        width: 131%;
+    }
+    .contact {
+        width: 131%;
+    }
+    .location img {
+        width: 131%;
+    }
+    .footer {
+        width: 131%;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .backgroundimage {
+        width: 238%;
+    }
+    .team {
+        width: 238%;
+    }
+    .customer {
+        width: 238%;
+    }
+    .pricing {
+        width: 238%;
+    }
+    .contact {
+        width: 238%;
+    }
+    .location img {
+        width: 238%;
+    }
+    .footer {
+        width: 238%;
+    }
+}
+
+@media screen and (max-width:295px) {
+    .backgroundimage {
+        width: 350%;
+    }
+    .team {
+        width: 350%;
+    }
+    .customer {
+        width: 350%;
+    }
+    .pricing {
+        width: 350%;
+    }
+    .contact {
+        width: 350%;
+    }
+    .location img {
+        width: 350%;
+    }
+    .footer {
+        width: 350%;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .backgroundimage {
+        width: 238%;
+    }
+    .team {
+        width: 238%;
+    }
+    .customer {
+        width: 238%;
+    }
+    .pricing {
+        width: 238%;
+    }
+    .contact {
+        width: 238%;
+    }
+    .location img {
+        width: 238%;
+    }
+    .footer {
+        width: 238%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .backgroundimage {
+        width: 335%;
+    }
+    .team {
+        width: 335%;
+    }
+    .customer {
+        width: 335%;
+    }
+    .pricing {
+        width: 335%;
+    }
+    .contact {
+        width: 335%;
+    }
+    .location img {
+        width: 335%;
+    }
+    .footer {
+        width: 335%;
+    }
+}
+
+@media screen and (max-width:307px) {
+    .backgroundimage {
+        width: 335%;
+    }
+    .team {
+        width: 335%;
+    }
+    .customer {
+        width: 335%;
+    }
+    .pricing {
+        width: 335%;
+    }
+    .contact {
+        width: 335%;
+    }
+    .location img {
+        width: 335%;
+    }
+    .footer {
+        width: 335%;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .backgroundimage {
+        width: 278%;
+    }
+    .team {
+        width: 278%;
+    }
+    .customer {
+        width: 278%;
+    }
+    .pricing {
+        width: 278%;
+    }
+    .contact {
+        width: 278%;
+    }
+    .location img {
+        width: 278%;
+    }
+    .footer {
+        width: 278%;
+    }
+}
+
+@media screen and (max-width:297px) {
+    .backgroundimage {
+        width: 330%;
+    }
+    .team {
+        width: 330%;
+    }
+    .customer {
+        width: 330%;
+    }
+    .pricing {
+        width: 330%;
+    }
+    .contact {
+        width: 330%;
+    }
+    .location img {
+        width: 330%;
+    }
+    .footer {
+        width: 330%;
+    }
+}
+
+@media screen and (max-width:377px) {
+    .backgroundimage {
+        width: 274%;
+    }
+    .team {
+        width: 274%;
+    }
+    .customer {
+        width: 274%;
+    }
+    .pricing {
+        width: 274%;
+    }
+    .contact {
+        width: 274%;
+    }
+    .location img {
+        width: 274%;
+    }
+    .footer {
+        width: 274%;
+    }
+}
+
+@media screen and (max-width:305px) {
+    .backgroundimage {
+        width: 335%;
+    }
+    .team {
+        width: 335%;
+    }
+    .customer {
+        width: 335%;
+    }
+    .pricing {
+        width: 335%;
+    }
+    .contact {
+        width: 335%;
+    }
+    .location img {
+        width: 335%;
+    }
+    .footer {
+        width: 335%;
+    }
+}
+
+@media screen and (max-width:898px) {
+    .backgroundimage {
+        width: 130%;
+    }
+    .team {
+        width: 130%;
+    }
+    .customer {
+        width: 130%;
+    }
+    .pricing {
+        width: 130%;
+    }
+    .contact {
+        width: 130%;
+    }
+    .location img {
+        width: 130%;
+    }
+    .footer {
+        width: 130%;
+    }
+}
+
+@media screen and (max-width:904px) {
+    .backgroundimage {
+        width: 130%;
+    }
+    .team {
+        width: 130%;
+    }
+    .customer {
+        width: 130%;
+    }
+    .pricing {
+        width: 130%;
+    }
+    .contact {
+        width: 130%;
+    }
+    .location img {
+        width: 130%;
+    }
+    .footer {
+        width: 130%;
+    }
+}
+
+@media screen and (max-width:887px) {
+    .backgroundimage {
+        width: 250%;
+    }
+    .team {
+        width: 250%;
+    }
+    .customer {
+        width: 250%;
+    }
+    .pricing {
+        width: 250%;
+    }
+    .contact {
+        width: 250%;
+    }
+    .location img {
+        width: 250%;
+    }
+    .footer {
+        width: 250%;
+    }
+}
+
+@media screen and (max-width:1258px) {
+    .backgroundimage {
+        width: 143%;
+    }
+    .team {
+        width: 143%;
+    }
+    .customer {
+        width: 143%;
+    }
+    .pricing {
+        width: 143%;
+    }
+    .contact {
+        width: 143%;
+    }
+    .location img {
+        width: 143%;
+    }
+    .footer {
+        width: 143%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .backgroundimage {
+        width: 172%;
+    }
+    .team {
+        width: 172%;
+    }
+    .customer {
+        width: 172%;
+    }
+    .pricing {
+        width: 172%;
+    }
+    .contact {
+        width: 172%;
+    }
+    .location img {
+        width: 172%;
+    }
+    .footer {
+        width: 172%;
+    }
+}
+
+@media screen and (max-width:648px) {
+    .backgroundimage {
+        width: 251%;
+    }
+    .team {
+        width: 251%;
+    }
+    .customer {
+        width: 251%;
+    }
+    .pricing {
+        width: 251%;
+    }
+    .contact {
+        width: 251%;
+    }
+    .location img {
+        width: 251%;
+    }
+    .footer {
+        width: 251%;
+    }
+}
+
+@media screen and (max-width:864px) {
+    .backgroundimage {
+        width: 217%;
+    }
+    .team {
+        width: 217%;
+    }
+    .customer {
+        width: 217%;
+    }
+    .pricing {
+        width: 217%;
+    }
+    .contact {
+        width: 217%;
+    }
+    .location img {
+        width: 217%;
+    }
+    .footer {
+        width: 217%;
+    }
+}
